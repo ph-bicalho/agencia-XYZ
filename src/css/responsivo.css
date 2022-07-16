@@ -1,0 +1,26 @@
+@media (max-width: 620px){
+    #sobre{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #sobre .image.esquerda{
+        order: 1;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero{
+        height: 60vh;
+    }
+    #serviços {
+        grid-template-columns: 1fr;
+    }
+    
+    
+}
+
+@media (max-width: 340px){
+    .hero h2{
+        font-size: 18px;
+    }
+}

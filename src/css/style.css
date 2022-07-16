@@ -1,0 +1,212 @@
+/* HEADER */
+.header { 
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background-color: var(--cor-clara);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 8px;
+}
+.header .logo{
+  font-size: 40px;
+  margin-left: 20px ;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.header .logo:hover{
+  color: var(--cor-destaque);
+}
+
+.header nav{
+  padding-right: 10px;
+}
+.header nav ul{
+  list-style: none;
+  display: flex;
+}
+.header nav ul li{
+  margin: 10px;
+}
+.header nav ul li a{
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 200ms ease-in-out ;
+}
+.header nav ul li a:hover{
+  background-color: var(--cor-destaque);
+  color: var(--cor-clara);
+ 
+} 
+
+
+
+
+/* HERO */
+.hero{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 89vh;
+  background: url(../images/lemons.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero h2{
+  text-transform: uppercase;
+}
+.hero::after{
+  content: url(../images/seta_preta.png);
+  position: absolute;
+  bottom: 30px;
+  height: 30px;
+  animation: subir-e-descer 600ms infinite alternate ease-in-out;
+}
+
+
+
+/* ABOUT */
+#sobre{
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-clara);
+}
+#sobre .image{
+  height: 100%;
+  width: 100%;
+}
+#sobre .image.direita{
+  background: url(../images/bridge.jpg) center center no-repeat;
+  background-size: cover;
+}
+#sobre .image.esquerda{
+  background: url(../images/sky.jpg) center center no-repeat;
+  background-size: cover;
+
+}
+#sobre .item{
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#sobre .item h3{
+  font-weight: 700;
+  font-size: 2rem;
+}
+#sobre .item p{
+  margin: 20px 0;
+  font-weight: 400;
+}
+#sobre .item .saiba-mais{
+  align-self: flex-start;
+}
+#sobre .item .saiba-mais:hover{
+  font-weight: 700;
+}
+
+
+/* SERVIÇOS */
+#serviços{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#serviços .service{
+  padding: 70px 20px;
+  text-align: center;
+}
+#serviços .service img{
+  width: 250px;
+  margin-bottom: 30px;
+}
+#serviços .serviceh3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+
+}
+#serviços .service p{
+  font-weight: 400;
+  max-width: 400px;
+  margin: 20px auto 0;
+  line-height: 25px;
+}
+#serviços .service .info{
+  text-align: center;
+}
+#serviços .service:nth-child(1) {
+  background-color: var(--cor-servico1);
+}
+#serviços .service:nth-child(2) {
+  background-color: var(--cor-servico2) ;
+}
+
+/* PROJETOS */
+#projetos{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+#projetos .projeto{
+  line-height: 10px;
+}
+
+#projetos .projeto img{
+  width: 100%;
+  transition: 300ms ease-in-out;
+  
+}
+
+#projetos .projeto a {
+  width: 100%;
+  
+   
+}
+#projetos .projeto a:hover img{
+  opacity: 0.6;
+}
+
+/* CONTATO */
+
+
+
+/* FOOTER */
+.footer {
+  background-color: var(--cor-footer);
+  padding: 100px 0;
+  text-align: center;
+}
+.footer h4{
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.footer a{
+  transition: 400ms ease;
+  padding: 10px;
+} 
+.footer a:hover{
+  font-weight: 700;
+}
+.footer ul{
+  display: inline-flex;
+  list-style: none;
+  padding: 30px 0;
+}
+.footer ul li{
+  margin: 10px;
+}
+.footer .social{
+  padding-bottom: 25px;
+}
+
+.footer .social i{
+  font-size: 25px;
+  padding: 0 10px;
+}
