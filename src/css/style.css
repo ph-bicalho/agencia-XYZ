@@ -45,7 +45,6 @@
 
 /* HERO */
 .hero{
-  max-width: var(--max-width);
   margin: 0 auto;
   height: 89vh;
   background: url(../images/lemons.jpg) center center no-repeat;
